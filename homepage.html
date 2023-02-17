@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Shop</title>
+		<link rel="stylesheet" href="C:\Users\Owner\Documents\Spring2023\Web Apps\CW\CW3\css\mycss.css" />
+		<script src="C:\Users\Owner\Documents\Spring2023\Web Apps\CW\CW3\js\myjavascript.js"></script>
+	</head>
+	<body  bgcolor="#F5FBEF" onclick="closeAll()">
+	
+	
+		<!--     Title      !-->
+		<div name="headDiv" id="headDiv">
+			<div style="display: inline-block; vertical-align:middle; margin-bottom:30px;"><img src="C:\Users\Owner\Documents\Spring2023\Web Apps\CW\CW3\img\Logo.png" width="100" height="100" /></div>
+			<div style="display: inline-block; vertical-align:middle;"><h1>Everything Store</h1></div>
+			<h2>Cart</h2>
+			<select readonly style="vertical-align:middle;" name="cart" id="cart">
+			</select>
+				
+		</div>
+		<!--     Title      !-->
+		
+		
+		<!--     NavBar     !-->
+		<div class="menDiv" name="menDiv" id="menDiv">
+			<span class="menEle" name="Furniture" id="menEle1"><a onmouseover ="menPop('1')"> Furniture </a> </span>
+			<span class="menEle" name="cars" id="menEle2"><a onmouseover ="menPop('2')"> Cars </a></span>
+			<span class="menEle" name="Laptops" id="menEle3"><a onmouseover ="menPop('3')"> Laptops </a></span>
+			<span class="menEle" name="Food" id="menEle4"><a onmouseover ="menPop('4')"> Food </a></span>
+		</div>
+		<!--     NavBar      !-->
+		
+		
+		<!--     Options      !-->
+		<div class="opsDiv" name="opsDiv" id="opsDiv">
+			<div class="menDrop" name="furnDrop" id="menPop1">
+				Couches <br>
+				Chairs <br>
+				Beds <br>
+				Desks <br>
+			</div>
+			<div style="margin-left: 384px;" class="menDrop" name="carDrop" id="menPop2">
+				<span name="toyEle" id="toyEle"><a href = "javascript:void(0)" onclick ="openToyCars()"> Toy <br> </a></span>
+				SUV <br>
+				Trucks <br>
+				Electric <br>
+			</div>
+			<div style="margin-left: 768px;" class="menDrop" name="lapDrop" id="menPop3">
+				Dell <br>
+				Apple <br>
+				HP <br>
+				Acer <br>
+			</div>
+			<div style="margin-left: 1152px;" style="margin-right: 10px;" class="menDrop" name="foodDrop" id="menPop4">
+				Frozen <br>
+				Dry <br>
+				Deli <br>
+				Fruit <br>
+			</div>
+		</div>
+		<!--     Options      !-->
+		
+		
+		<!--     StoreCars      !-->
+		<table name="toyCars" id="toyCars">
+			<tr>
+				<td><img src="C:\Users\Owner\Documents\Spring2023\Web Apps\CW\CW3\img\Car1.jpg" width="100" height="100" /></td>
+				<td><img src="C:\Users\Owner\Documents\Spring2023\Web Apps\CW\CW3\img\Car2.jpg" width="100" height="100" /></td>
+				<td><img src="C:\Users\Owner\Documents\Spring2023\Web Apps\CW\CW3\img\Car3.jpg" width="100" height="100" /></td>
+				<td><img src="C:\Users\Owner\Documents\Spring2023\Web Apps\CW\CW3\img\Car4.jpg" width="100" height="100" /></td>
+				<td><img src="C:\Users\Owner\Documents\Spring2023\Web Apps\CW\CW3\img\Car5.jpg" width="100" height="100" /></td>
+			</tr>
+			<tr>
+				<td> <a href = "javascript:void(0)" onclick ="popup('1')" />
+					Red Car
+				</a> </td>
+				<td> <a href = "javascript:void(0)" onclick ="popup('2')" />
+					Yellow Car
+				</a> </td>
+				<td> <a href = "javascript:void(0)" onclick ="popup('3')" />
+					Pink Car
+				</a> </td>
+				<td> <a href = "javascript:void(0)" onclick ="popup('4')" />
+					Beige Car
+				</a> </td>
+				<td> <a href = "javascript:void(0)" onclick ="popup('5')" />
+					Orange Car
+				</a> </td>
+			</tr>
+			<tr>
+				<td><img src="C:\Users\Owner\Documents\Spring2023\Web Apps\CW\CW3\img\Car6.jpg" width="100" height="100" /></td>
+				<td><img src="C:\Users\Owner\Documents\Spring2023\Web Apps\CW\CW3\img\Car7.jpg" width="100" height="100" /></td>
+				<td><img src="C:\Users\Owner\Documents\Spring2023\Web Apps\CW\CW3\img\Car8.jpg" width="100" height="100" /></td>
+				<td><img src="C:\Users\Owner\Documents\Spring2023\Web Apps\CW\CW3\img\Car9.jpg" width="100" height="100" /></td>
+				<td><img src="C:\Users\Owner\Documents\Spring2023\Web Apps\CW\CW3\img\Car10.jpg" width="100" height="100" /></td>
+			</tr>
+			<tr>
+				<td> <a href = "javascript:void(0)" onclick ="popup('6')" />
+					Fire Car
+				</a> </td>
+				<td> <a href = "javascript:void(0)" onclick ="popup('7')" />
+					Travel bus
+				</a> </td>
+				<td> <a href = "javascript:void(0)" onclick ="popup('8')" />
+					Taxi
+				</a> </td>
+				<td> <a href = "javascript:void(0)" onclick ="popup('9')" />
+					Donald's Car
+				</a> </td>
+				<td> <a href = "javascript:void(0)" onclick ="popup('10')" />
+					Lego Car
+				</a> </td>
+			</tr>
+		</table>
+		<!--     StoreCars      !-->
+		
+		
+		<!--     CarsPopups      !-->
+		<div id="popup1" name="Red Car" class="white_content">
+			<p align=center>
+				Car: Red Car <br> Price: Billion <br> Description: Epic <br> Rating: 5 Stars <br>
+				<a href = "javascript:void(0)" onclick = "popupclose('1')" class=linktext>close window</a><br>
+				<div class="cartButton"><button type="button" onclick="javascript:addToCart(1);">Add to Cart</button></div>
+			</p>
+		</div>
+		<div id="popup2" name="Yellow Car" class="white_content">
+			<p align=center>
+				Car: Yellow Car <br> Price: $100000 <br> Description: classic, sleek, yellow. <br> Rating: 4 Stars <br>
+				<a href = "javascript:void(0)" onclick = "popupclose('2')" class=linktext>close window</a>
+				<div class="cartButton"><button type="button" onclick="javascript:addToCart(2)">Add to Cart</button></div>
+			</p>
+		</div>
+		<div id="popup3" name="Pink Car" class="white_content">
+			<p align=center>
+				Car: Pink Car <br> Price: Pink <br> Description: Pink <br> Rating: 3 Stars <br>
+				<a href = "javascript:void(0)" onclick = "popupclose('3')" class=linktext>close window</a>
+				<div class="cartButton"><button type="button" onclick="javascript:addToCart(3)">Add to Cart</button></div>
+			</p>
+		</div>
+		<div id="popup4" name="Beige Car" class="white_content">
+			<p align=center>
+				Car: Beige Car <br> Price: $4000 <br> Description: Does the job decently <br> Rating: 2 Stars <br>
+				<a href = "javascript:void(0)" onclick = "popupclose('4')" class=linktext>close window</a>
+				<div class="cartButton"><button type="button" onclick="javascript:addToCart(4)">Add to Cart</button></div>
+			</p>
+		</div>
+		<div id="popup5" name="Orange Car" class="white_content">
+			<p align=center>
+				Car: Orange Car <br> Price: $100000 <br> Description: Built for off-roading and crushing other cars. <br> Rating: 1 Star <br>
+				<a href = "javascript:void(0)" onclick = "popupclose('5')" class=linktext>close window</a>
+				<div class="cartButton"><button type="button" onclick="javascript:addToCart(5)">Add to Cart</button></div>
+			</p>
+		</div>
+		<div id="popup6" name="Fire Car" class="white_content">
+			<p align=center>
+				Car: Fire Car <br> Price: $30000 <br> Description: This car is good at fighting fires. <br> Rating: 5 Stars <br>
+				<a href = "javascript:void(0)" onclick = "popupclose('6')" class=linktext>close window</a>
+				<div class="cartButton"><button type="button" onclick="javascript:addToCart(6)">Add to Cart</button></div>
+			</p>
+		</div>
+		<div id="popup7" name="Travel Bus" class="white_content">
+			<p align=center>
+				Car: Travel Bus <br> Price: $50000 <br> Description: Can take the whole family on a trip <br> Rating: 4 Stars <br>
+				<a href = "javascript:void(0)" onclick = "popupclose('7')" class=linktext>close window</a>
+				<div class="cartButton"><button type="button" onclick="javascript:addToCart(7)">Add to Cart</button></div>
+			</p>
+		</div>
+		<div id="popup8" name="Taxi" class="white_content">
+			<p align=center>
+				Car: Taxi <br> Price: $1000 <br> Description: classic, sleek, yellow. <br> Rating 3 Stars <br>
+				<a href = "javascript:void(0)" onclick = "popupclose('8')" class=linktext>close window</a>
+				<div class="cartButton"><button type="button" onclick="javascript:addToCart(8)">Add to Cart</button></div>
+			</p>
+		</div>
+		<div id="popup9" name="Donald's Car" class="white_content">
+			<p align=center>
+				Car: Donald's Car <br> Price: $80000 <br> Description: Famous car used by Donald Duck <br> Rating: 10 Stars <br>
+				<a href = "javascript:void(0)" onclick = "popupclose('9')" class=linktext>close window</a>
+				<div class="cartButton"><button type="button" onclick="javascript:addToCart(9)">Add to Cart</button></div>
+			</p>
+		</div>
+		<div id="popup10" name="Lego Car" class="white_content">
+			<p align=center>
+				Car: Lego Car <br> Price: $40 <br> Description: Build it yourself! <br> Rating: 2 Stars <br>
+				<a href = "javascript:void(0)" onclick = "popupclose('10')" class=linktext>close window</a>
+				<div class="cartButton"><button type="button" onclick="javascript:addToCart(10)">Add to Cart</button></div>
+			</p>
+		</div>
+		<!--     CarPopups      !-->
+	</body>
+</html>
